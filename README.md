@@ -30,6 +30,7 @@ A simple and lightweight eCommerce application that allows users to browse produ
 
 ### 1. Clone the repository
 git clone https://github.com/Alvarojrzz/E-commerce-Jewels.git
+
 cd ecommerce-project
 
 
