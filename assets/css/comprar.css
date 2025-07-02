@@ -1,0 +1,533 @@
+@import url(basic.css);
+@import url(header.css);
+@import url(footer.css);
+
+.checkout-container {
+    max-width: 100%;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+
+h1 {
+    color: var(--color-primario);
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.delivery-form {
+    grid-column: span 3 / span 3;
+    grid-row: span 4 / span 4;
+}
+
+.order-summary {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 4;
+}
+
+.order-summary,
+.delivery-form {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.order-summary h2,
+.delivery-form h2 {
+    margin-top: 0;
+    color: var(--color-primario);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.order-summary table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-summary table th,
+.order-summary table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-summary table img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.order-summary .total-row td {
+    font-weight: bold;
+    color: var(--color-detalle);
+}
+
+.delivery-form label {
+    display: block;
+    margin-top: 0.75rem;
+    font-weight: 500;
+}
+
+.delivery-form input,
+.delivery-form select,
+.delivery-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 0.25rem;
+}
+
+.delivery-form button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--color-primario);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delivery-form button:hover {
+    background: var(--color-accento);
+}
+
+.message {
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.confirmation-container {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.confirmation-header {
+    background: linear-gradient(135deg, var(--color-primario), var(--color-accento));
+    color: white;
+    padding: 2rem 1rem;
+    margin: -2rem -2rem 2rem -2rem;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+
+.confirmation-icon {
+    font-size: 5rem;
+    color: #4CAF50;
+    margin: 1rem 0;
+    animation: scaleIn 0.6s ease-out;
+}
+
+.confirmation-title {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.confirmation-message {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.order-details-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    text-align: left;
+    border: 4px solid var(--color-primario);
+}
+
+.order-details-header {
+    display: flex;
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.detail-item {
+    margin-bottom: 1rem;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.detail-value {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.summary-title {
+    text-align: left;
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    color: var(--color-primario);
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.product-summary {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.product-summary img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 1rem;
+}
+
+.product-info {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.product-name {
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+}
+
+.product-details {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.confirmation-actions {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.action-btn {
+    padding: 0.8rem 1.8rem;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.primary-btn {
+    background: var(--color-secundario);
+    color: #ffffff;
+    border: 2px solid var(--color-secundario);
+}
+
+.primary-btn:hover {
+    background: var(--color-accento);
+    border-color: var(--color-accento);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.secondary-btn {
+    background: white;
+    color: var(--color-primario);
+    border: 2px solid var(--color-primario);
+}
+
+.secondary-btn:hover {
+    background: #f8f8f8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-number-badge {
+    background: #f0f7ff;
+    color: var(--color-primario);
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 0.5rem 0;
+    border: 1px dashed var(--color-primario);
+}
+
+.email-notice {
+    background: #e8f4ff;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+}
+
+.email-notice i {
+    font-size: 2rem;
+    color: var(--color-primario);
+    flex-shrink: 0;
+}
+
+.datos-extra {
+    margin-top: 1rem;
+}
+
+.datos-extra label {
+    display: block;
+    margin-top: 0.75rem;
+    font-weight: 500;
+}
+
+.datos-extra input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 0.25rem;
+}
+
+
+.metodo-pago-group {
+    margin-top: 1.5rem;
+}
+
+.metodo-pago-group h2 {
+    font-size: 1.25rem;
+    color: var(--color-primario);
+    margin-bottom: 0.75rem;
+}
+
+.metodos-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.metodo-opcion {
+    cursor: pointer;
+    flex: 1 1 200px;
+}
+
+.metodo-opcion input[type="radio"] {
+    display: none;
+}
+
+
+.metodo-card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.metodo-icon {
+    font-size: 1.75rem;
+    color: var(--color-primario);
+    width: 36px;
+    text-align: center;
+}
+
+.metodo-texto {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.metodo-opcion input[type="radio"]:checked+.metodo-card {
+    border-color: var(--color-primario);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.metodo-opcion .metodo-card:hover {
+    border-color: var(--color-primario);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.direcciones-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.direccion-card {
+    border: 2px solid #eaeaea;
+    border-radius: 8px;
+    padding: 1rem;
+    background: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.direccion-card:hover {
+    border-color: #c5c5c5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.direccion-card.selected {
+    border-color: var(--color-primario);
+    background-color: rgba(50, 115, 220, 0.05);
+}
+
+.direccion-card .principal-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--color-primario);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.direccion-card h3 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+    font-size: 1rem;
+}
+
+.direccion-card p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+.metodos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.metodo-card {
+    border: 2px solid #eaeaea;
+    border-radius: 8px;
+    padding: 1rem;
+    background: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.metodo-card:hover {
+    border-color: #c5c5c5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.metodo-card.selected {
+    border-color: var(--color-primario);
+    background-color: rgba(50, 115, 220, 0.05);
+}
+
+.metodo-card .icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-primario);
+    display: block;
+}
+
+.metodo-card .card-label {
+    font-weight: 500;
+    color: #333;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.form-group {
+    margin-bottom: 0.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+    color: #444;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+    transition: border 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--color-primario);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(50, 115, 220, 0.2);
+}
+
+
+.section-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+    color: var(--color-primario);
+    margin-top: 0;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1.5rem;
+}

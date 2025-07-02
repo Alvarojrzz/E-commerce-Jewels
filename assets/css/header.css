@@ -1,0 +1,117 @@
+   /*HEADER*/
+   .header {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       padding: 1rem 2rem;
+       background: linear-gradient(135deg, #1c3d5b 0%, #122738 100%);
+       color: white;
+       padding: 1rem 2rem;
+       flex-wrap: wrap;
+       position: relative;
+       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+   }
+
+   /* BARRA DE BÚSQUEDA */
+   .search-bar {
+       flex: 0 1 600px;
+       margin: 0 2rem;
+   }
+
+   .search-bar form {
+       display: flex;
+       align-items: center;
+       background: #fffffff2;
+       border: 2px solid #efb810;
+       border-radius: 35px;
+       padding: 5px 20px;
+       transition: all 0.3s ease;
+   }
+
+   .search-bar input[type="text"] {
+       border: none;
+       background: transparent;
+       padding: 8px 8px;
+       font-size: 16px;
+       color: #1c3d5b;
+       font-family: 'Inter', sans-serif;
+   }
+
+   .search-bar button {
+       all: unset;
+       cursor: pointer;
+       color: #efb810;
+   }
+
+   /* SECCION LOGIN */
+   .access a {
+       color: white;
+       text-decoration: none;
+   }
+
+   .access a:hover {
+       color: #f0c674;
+   }
+
+   .login-icons {
+       list-style: none;
+       display: flex;
+       gap: 1rem;
+       padding: 0;
+       margin: 0;
+       align-items: center;
+   }
+
+   .login-icons li a {
+       font-size: 1.5rem;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+    .login-link {
+        margin-left: 50px !important;
+        font-size: 18px !important;        
+        text-decoration: none;    
+        color: #333;              
+        transition: text-decoration 0.2s ease-in-out;
+    }
+    
+    .login-link:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+  
+   /* MENÚ DE NAVEGACIÓN */
+   .menu-nav {
+       padding-top: 1rem;
+       border-top: 1px solid rgba(255, 255, 255, 0.3);
+       width: 100%;
+       margin-top: 1rem;
+   }
+
+   .menu-nav ul {
+       display: flex;
+       justify-content: center;
+       list-style: none;
+       padding: 0.5rem 0;
+       margin: 0;
+   }
+
+   .menu-nav li {
+       margin: 0 1.5rem;
+   }
+
+   .menu-nav a {
+       color: white;
+       text-decoration: none;
+       font-weight: 600;
+       font-family: 'Inter', sans-serif;
+       transition: color 0.3s ease;
+   }
+
+   .menu-nav a:hover {
+       text-decoration: underline;
+   }
+
+   
+  

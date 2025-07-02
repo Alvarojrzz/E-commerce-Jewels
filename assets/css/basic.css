@@ -1,0 +1,40 @@
+@import url("reset.css");
+
+:root {
+    --color-primario: #1c3d5b; /* Azul marino oscuro (COLOR BASE) */
+    --color-secundario: #B59F6F;/* Oro antiguo */
+    --color-accento: #E0A800;/* Dorado brillante para destacar */
+    --color-fondo: #F5F5F5;/* Blanco para fondos */
+    --color-texto: #2D2D2D;/* Gris oscuro para texto */
+    --color-detalle: #8B0000;/* Rojo */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+main.parent {
+    flex: 1 0 auto;
+}
+
+
+#diamondCanvas {
+    display: block;
+    padding-right: 10px; 
+    padding-left: 40px;
+}
+  
